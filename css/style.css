@@ -1,0 +1,541 @@
+body, ul, p, h1, h2, h3, h4, h5, h6{
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  width: 70%;
+  margin: 0 auto; /* центрирование */
+  max-width: 1920px;
+}
+
+.flex-container{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.header{
+  background-color: #141415;
+  height: 940px;
+  background-image: url('..//img/Shape\ branco\ -\ @manow\ \(268\)\ 1.svg');
+  background-size: cover;
+  background-position:center;
+}
+
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style-type: none;
+}
+
+.header li a, .header__twoo li a{
+  color: #C0B8B8;
+  font-size: 24px;
+  font-family: 'Raleway';
+  font-weight: 300;
+}
+
+.header li a:hover, .header__twoo li a:hover{
+  color: #AA8660;
+  transition: transform 0.3s ease;
+}
+
+.header ul, .header__twoo ul{
+  display: flex;  
+  gap: 80px;
+}
+
+.logo{
+  width: 77px;
+  height: auto;
+}
+
+.group-1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.group-2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.group-2 .text-one, .group-2 .text-two{
+  color: #C0B8B8;
+  font-family: 'Cinzel Decorative';
+  font-size: 250px;
+  position: absolute;
+  line-height: 30px;
+  z-index: 1;
+  filter:drop-shadow(0px 4px 10px #ffffff3a);
+}
+
+.text-one{
+  top:335px;
+  left: 15%;
+}
+
+.text-two{
+  top:523px;
+  right: 15%;
+}
+
+.group-2 img{
+  z-index: 2;
+  width: 575px;
+}
+
+.group-2 button{
+  width: 295px;
+  height: 50px;
+  color: #AA8660;
+  border-radius: 10px;
+  border: solid 3px #AA8660;
+  background-color: #141415;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Raleway';
+  position: absolute;
+  left: 15%;
+  top: 563px;
+  transition: transform 0.3s ease;
+}
+
+.group-3{
+  margin-bottom: 60px;
+}
+
+/*----------------------main----------------------*/
+.main{
+  background-color: #1B1B1D;
+  padding-bottom: 120px;
+}
+
+
+
+
+/*------Категории------*/
+.category{
+  padding-top: 120px;
+}
+
+.big{
+  font-family: 'Cinzel Decorative';
+  color: #AA8660;
+  font-size: 160px;
+  line-height: 64px;
+}
+
+.category__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center; 
+}
+
+.category__title .top-text, .category__title .bottom-text, .flavor__title .text, .catalog__title, .catalog__title-1{
+  font-size: 75px;
+  color: #C0B8B8;
+  font-family: 'Cormorant unicase';
+}
+
+.bottom-text{
+  display: flex;
+  align-items: center;
+  margin: -20px 0 40px;
+}
+
+/*------гриды 1 блок (Main)------------*/
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); 
+  gap: 20px;
+}
+
+.grid-container__card {
+  background: #f0f0f0;
+  padding: 20px;
+  height: 360px;
+  font-family: 'Raleway';
+  font-weight: 300;
+  font-size: 36px;
+  color: #C0B8B8;
+  background-size: cover;
+  border-radius: 2px;
+  background-position: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.grid-container__card:hover{
+  transform: scale(0.95);
+}
+
+.grid-container__card:nth-child(1) {
+  grid-column: 1 / span 2; 
+}
+
+.grid-container__card:nth-child(2) {
+  grid-column: 3 / span 2; 
+}
+
+.grid-container__card:nth-child(3) {
+  grid-column: 5 / span 2; 
+}
+
+.grid-container__card:nth-child(4) {
+  grid-column: 1 / span 3; 
+  grid-row: 2; 
+}
+
+.grid-container__card:nth-child(5) {
+  grid-column: 4 / span 3; 
+  grid-row: 2; 
+}
+
+.category button, .catalog button, .catalog__twoo .button-center button, .grid-three button{
+  width: 300px;
+  height: 50px;
+  background-color: #1B1B1D;
+  border:  solid 3px #AA8660;
+  color: #AA8660;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Raleway';
+  margin-top: 40px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.category button:hover, .catalog button:hover, .grid-three button:hover, .group-2 button:hover, .catalog__twoo .button-center button:hover{
+  transform: scale(0.95);
+}
+
+.button-center{
+  text-align: center;
+}
+
+
+
+
+
+
+/*--------Вкус и индивидуальность-----------*/
+.flavor{
+  margin-top: 230px;
+}
+
+.flavor .background-image{
+  height: 740px;
+  width: 100%;
+  background-size: cover;
+}
+
+.flavor__title .text-smoll{
+  color: #C0B8B8;
+  width: 480px;
+  font-size: 24px;
+  font-family: 'Raleway';
+  position: absolute;
+  left: 38%;
+}
+
+.flavor__title .text{
+  text-align: center;
+  padding-top: 36px;
+}
+
+.flavor__title{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: -760px;
+}
+
+
+
+
+
+
+
+
+/*---------Галерея изысканных решений------------*/
+.catalog{
+  padding-top: 120px;
+}
+
+.catalog__twoo{
+  padding-top: 20px;
+}
+
+.catalog__title{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.catalog  .grid-container, .catalog__twoo .grid-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 40px 20px;
+}
+
+.catalog  .grid-container .card, .catalog__twoo .grid-container .card {
+  
+  height: 100%;
+  background-size: cover;
+  border-radius: 2px;
+  background-position: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.catalog  .grid-container .card:hover, .catalog__twoo .grid-container .card:hover{
+  transform: scale(0.95);
+}
+
+.grid-container .card img{
+  width: 100%;
+  border-radius: 2px;
+}
+
+.catalog .grid-container .card--flex, .catalog__twoo .grid-container .card--flex{
+  margin-top: 25px;
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card--flex .text, .card--flex .text--number{
+ font-family: 'Raleway'; 
+ color: #C0B8B8;
+}
+.card--flex .text{
+  font-size: 24px;
+}
+
+.text--number{
+  font-size: 32px;
+}
+
+
+
+
+
+
+
+
+/*---------footer-----------*/
+
+footer .grid-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 80px;
+  padding: 60px 0 160px 0;
+}
+
+footer .grid-container .flex-container{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.background-image__footer{
+  background-size: cover;
+  background-position: center;
+}
+
+footer .text{
+  color: #C0B8B8;
+  font-size: 24px;
+  font-family: 'Raleway';
+  line-height: 35px;
+  font-weight: 400;
+}
+
+.seti{
+  display: flex;
+  gap: 40px;
+  padding-left: 10px;
+}
+
+.seti img{
+  width: 70px;
+  height: 70px;
+  transition: transform 0.3s ease;
+}
+
+.seti img:hover{
+  transform: scale(0.90);
+}
+
+.foot{
+  background-color: #1B1B1D;
+  opacity: 70%;
+  height: 60px;
+  text-align: center;
+}
+
+.foot h2{
+  font-family: 'Raleway';
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 300;
+  opacity: 100%;
+  padding-top: 15px;
+}
+
+footer .grid-container .flex-container__twoo{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.contakt{
+  color: #C0B8B8;
+  font-size: 36px;
+  font-family: 'Raleway';
+  font-weight: 400;
+  margin-top: 25px;
+}
+
+.flex-container__twoo .flex{
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.flex-container__twoo .flex a{
+  color: #C0B8B8;
+  font-family: 'Raleway';
+  font-size: 20px;
+  font-weight: 400;
+}
+
+
+
+
+/*------Страница Katalog----------------*/
+.header__twoo{
+  background-color: #1B1B1D;
+  height: 100%;
+  background-size: cover;
+  background-position:center;
+}
+
+.filter{
+  padding-top: 50px;
+}
+
+.filter .text{
+  font-family: 'Raleway';
+  font-size: 20px;
+  color: #C0B8B8;
+}
+
+.filter .text-bold{
+  font-weight: 600;
+}
+
+.flex-filter{
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-filter .flex{
+  display: flex;
+  gap: 70px;
+}
+
+.flex-filter .flex-twoo{
+  display: flex;
+  gap: 20px;
+  
+}
+
+
+.filter a{
+  color: #C0B8B8;
+}
+
+.flex-filter select{
+  background-color: #1B1B1D;
+  border: solid 1px #C0B8B8;
+  color: #C0B8B8;
+  font-size: 18px;
+  height: 30px;
+  padding: 0 20px 0 20px;
+  box-sizing: border-box;
+}
+
+
+
+/*---------card.html-------------------*/
+.catalog__title-1{
+  padding-bottom: 20px;
+}
+
+.str__card .grid-container{
+  grid-template-columns: repeat(12 , 1fr);
+  gap: 20px;
+  margin-top: 40px;
+  margin-bottom: 130px;
+}
+
+.str__card img{
+  grid-column: span 5;
+  width: 100%;
+}
+
+.grid-container-two{
+  grid-column: span 7;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.grid-container-two__title{
+  font-size: 36px;
+  color: #C0B8B8;
+  font-family: 'Raleway';
+  grid-column: span 7;
+}
+
+.grid-three{
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 20px;
+  grid-column: span 7;
+}
+
+.grid-three__title{
+  grid-column: span 2;
+}
+
+.description{
+  grid-column: span 5;
+}
+
+.grid-three .price{
+  grid-column: span 2;
+}
+
+.grid-three button{
+  grid-column: span 4;
+  margin-top: 0;
+}
+
+.grid-three__title, .description{
+  font-family: 'Raleway';
+  font-size: 20px;
+  font-weight: 100;
+  color: white;
+}
+
